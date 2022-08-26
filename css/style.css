@@ -485,44 +485,31 @@ cursor: pointer;
 .clients {
     padding-top: 94px;
     padding-bottom: 94px;
-    transition: var(--transition-color), var(--transition-border);
+   
 }
 
-.clients-container {
-    transition: var(--transition-color), var(--transition-border);
+.client-icon{
+    display: inline-flex;
+    fill: currentColor;
 }
 
 .client-list {
     display: flex;
     gap: 30px;
-    transition: var(--transition-color), var(--transition-border);
+   
 }
 
-.client-icon {
-    display: inline-flex;
-    fill: #AFB1B8;
-    
-}
-
-
-.client-link:hover .client-icon {
-    transition: var(--transition-color), var(--transition-border);
-    fill: var(--accent-color);
-
-}
-
-.client-link:focus .client-icon {
-    fill: var(--accent-color);
-    transition: var(--transition-color), var(--transition-border);
-}
 
 .client-link {
   display: flex;
     justify-content: center;
     align-items: center;
+
     width: 170px;
     height: 92px;
+
     transition: var(--transition-color), var(--transition-border), var(--transition-bgc);
+
     color: var(--p-color);
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -531,8 +518,7 @@ cursor: pointer;
 .client-link:hover,
 .client-link:focus {
     border: 1px solid #2196F3;
-    border-radius: 4px;
-    transition: var(--transition-color), var(--transition-border);
+    color: var(--accent-color);
 }
 footer {
     background-color: var(--bgd-color);
