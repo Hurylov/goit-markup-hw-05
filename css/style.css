@@ -488,9 +488,13 @@ cursor: pointer;
    
 }
 
+.clients-container{
+    margin-bottom: 50px;
+}
+
 .client-icon{
     display: inline-flex;
-    fill: currentColor;
+    fill: #AFB1B8;
 }
 
 .client-list {
