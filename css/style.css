@@ -146,7 +146,7 @@ header {
 .adress-icon:hover .client-link:hover {
     color: var(--accent-color);
     fill: var(--accent-color);
-    transition: var(--transition-color)
+
 }
 
 .current{
@@ -441,26 +441,26 @@ cursor: pointer;
 
 .team-soc {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 10px;
 }
 
 .team-soc-link {
-    display: flex;
+      display: flex;
     justify-content: center;
     align-items: center;
+    transition: var(--transition-bgc), var(--transition-color);
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    transition: var(--transition-bgc),
-        var(--transition-color);
-        color: var(--p-color);
+    color: #AFB1B8;;
 }
 
 
 .team-soc-link:hover,
 .team-soc-link:focus {
     background-color: var(--accent-color);
-    transition: var(--transition-bgc);
+    color: var(--white-color);
 }
 
 .team-soc-link:hover .team-soc-icon {
@@ -477,8 +477,8 @@ cursor: pointer;
 
 
 .team-soc-icon {
-    fill: #AFB1B8;
-    transition: var(--transition-color);
+    display: inline-flex;
+        fill: currentColor;
 }
 
 .clients {
