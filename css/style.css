@@ -451,8 +451,9 @@ cursor: pointer;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: transparent;
-    transition: var(--transition-bgc)
+    transition: var(--transition-bgc),
+        var(--transition-color);
+        color: var(--p-color);
 }
 
 
@@ -477,6 +478,7 @@ cursor: pointer;
 
 .team-soc-icon {
     fill: #AFB1B8;
+    transition: var(--transition-color);
 }
 
 .clients {
@@ -511,7 +513,7 @@ cursor: pointer;
 
     transition: var(--transition-color), var(--transition-border), var(--transition-bgc);
 
-    color: var(--p-color);
+    color:#AFB1B8;;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
