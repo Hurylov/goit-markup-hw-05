@@ -113,14 +113,14 @@ header {
 .adress-icon {
     display: inline-block;
         margin-right: 10px;
-        fill: var(--p-color);
+        fill: currentColor;
 }
 
 
 
 .contacts-item {
     align-items: baseline;
-    transition: var(--transition-color)
+    
 }
 
 .menu-alignment {
@@ -136,6 +136,7 @@ header {
     line-height: 16px;
     display: block;
     padding: 32px 0;
+    transition: var(--transition-color);
 }
 
 .link:hover,
@@ -146,7 +147,7 @@ header {
 .adress-icon:hover .client-link:hover {
     color: var(--accent-color);
     fill: var(--accent-color);
-
+    
 }
 
 .current{
@@ -201,22 +202,22 @@ header {
     display: flex;
     margin-left: auto;
     gap: 50px;
+
 }
 
 .contacts-header {
     display: flex;
         align-items: center;
+
         transition: var(--transition-color);
+
         letter-spacing: 0.02em;
         color: var(--p-color);
         font-weight: 500;
         font-size: 14px;
 }
 
-.contacts-header:hover .adress-icon {
-    color: var(--accent-color);
-    fill: var(--accent-color);
-}
+
 
 .hero {
     background-color: var(--bgd-color);
@@ -441,44 +442,37 @@ cursor: pointer;
 
 .team-soc {
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    justify-content: space-evenly;
 }
 
 .team-soc-link {
-      display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    transition: var(--transition-bgc), var(--transition-color);
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    color: #AFB1B8;;
+    background-color: transparent;
+    transition: var(--transition-bgc), var(--transition-color);
 }
 
 
 .team-soc-link:hover,
 .team-soc-link:focus {
     background-color: var(--accent-color);
-    color: var(--white-color);
 }
 
-.team-soc-link:hover .team-soc-icon {
-    
+
+
+
+.team-soc-icon:hover,
+.team-soc-icon:focus {
     fill: var(--white-color);
+    background-color: var(--accent-color);
 }
-
-.team-soc-link:focus .team-soc-icon {
-    
-    fill: var(--white-color);
-}
-
-
-
 
 .team-soc-icon {
-    display: inline-flex;
-        fill: currentColor;
+    fill: #AFB1B8;
 }
 
 .clients {
@@ -487,9 +481,7 @@ cursor: pointer;
    
 }
 
-.clients-container{
-    margin-bottom: 50px;
-}
+
 
 .client-icon{
     display: inline-flex;
@@ -511,9 +503,9 @@ cursor: pointer;
     width: 170px;
     height: 92px;
 
-    transition: var(--transition-color), var(--transition-border), var(--transition-bgc);
+    transition: var(--transition-color), var(--transition-border);
 
-    color:#AFB1B8;;
+    color: #AFB1B8;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
@@ -556,11 +548,13 @@ address {
 .contacts-footer {
     color: var(--clear-gray-color);
     display: flex;
+    transition: var(--transition-color);
 }
 
 .adress-footer {
     color: var(--white-color);
     display: flex;
+    transition: var(--transition-color);
 }
 
 .soc-title {
@@ -593,7 +587,9 @@ address {
     height: 44px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
-    transition: var(--transition-bgc);
+    transition:
+    var(--transition-color),
+    var(--transition-bgc);
 }
 
 .soc-footer {
@@ -603,7 +599,6 @@ address {
 
 .footer-soc-link:hover {
     background-color: var(--accent-color);
-    transition: var(--transition-color);
 }
 
 .footer-soc-link:focus {
@@ -616,6 +611,10 @@ address {
 
 .footer-soc-icon {
     fill: var(--white-color)
+}
+
+.footer-address{
+    transition: var(--transition-color);
 }
 
 .filters {
